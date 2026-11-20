@@ -32,13 +32,18 @@ header {
 }
 
 .logo {
-    font-size: 25px;
-    font-weight: 800;
-    color: #6739b7;
+    display: flex;
+    align-items: center;
+    flex: 0 1 auto;
+    min-width: 0;
 }
 
-.logo span {
-    color: #222;
+.logo img {
+    display: block;
+    width: clamp(130px, 22vw, 220px);
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
 }
 
 nav {
@@ -324,7 +329,9 @@ footer {
 <body>
 
 <header>
-    <div class="logo">DANORG<span> HUB.</span></div>
+    <div class="logo">
+    <img src="E5396E3C-94C4-47B2-8F3C-A1A3744A07F6.png" alt="Danorg Hub Logo">
+</div>
 
     <nav>
         <a href="#">Home</a>
